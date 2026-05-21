@@ -1,0 +1,5 @@
+/* App-specific overrides — most styling is handled by Mantine */
+
+main {
+  flex: 1;
+}

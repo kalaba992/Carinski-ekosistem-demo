@@ -1,0 +1,56 @@
+:root {
+  --c-primary: #228be6;
+  --c-primary-dark: #1c7ed6;
+  --c-bg: #f8f9fa;
+  --c-bg-soft: #ffffff;
+  --c-border: #dee2e6;
+  --c-text: #1a1b1e;
+  --c-text-soft: #868e96;
+  --c-success: #2f9e44;
+  --c-warning: #f08c00;
+  --c-error: #e03131;
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --transition: 200ms ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--c-bg);
+  color: var(--c-text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.demo-container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (max-width: 768px) {
+  .demo-container {
+    padding: 0 12px;
+  }
+}
