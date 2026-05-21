@@ -12,7 +12,7 @@ export default function ClassificationResult({ result }: ClassificationResultPro
         <Group justify="space-between" wrap="nowrap">
           <div>
             <Text size="xs" c="dimmed" tt="uppercase" fw={600}>
-              HS Code
+              Illustrative HS family
             </Text>
             <Text size="xxl" fw={700} style={{ fontFamily: 'monospace' }}>
               {result.hsCode}
