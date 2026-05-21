@@ -1,0 +1,43 @@
+name: UI/UX Feedback
+description: Review clarity, trust, usability, accessibility, and disclaimer effectiveness
+labels: [demo]
+body:
+  - type: textarea
+    id: screen
+    attributes:
+      label: Screen / flow reviewed
+      placeholder: Which page or interaction?
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Confusing wording or layout
+      placeholder: What is unclear, misleading, or hard to use?
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: User impact
+      placeholder: How does this affect someone using the demo?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      placeholder: How would you fix it?
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - P0 — dangerous
+        - P1 — blocker
+        - P2 — important
+        - P3 — polish
+    validations:
+      required: true

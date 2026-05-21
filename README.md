@@ -68,9 +68,18 @@ This demo visualizes the output format without the backend logic.
 
 ## How to Help
 
-- Open an [Issue](https://github.com/kalaba992/Carinski-ekosistem-demo/issues) for architecture, UI/UX, security, or code quality feedback
-- See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines
-- Report security concerns through Issues per [SECURITY.md](SECURITY.md)
+Please do not only write "nice project." The most useful feedback is specific, critical, and actionable.
+
+Choose one review lane and open a matching structured issue template:
+
+- [Architecture Review](https://github.com/kalaba992/Carinski-ekosistem-demo/issues/new?template=architecture_review.yml)
+- [Security Review](https://github.com/kalaba992/Carinski-ekosistem-demo/issues/new?template=security_review.yml)
+- [Testing Review](https://github.com/kalaba992/Carinski-ekosistem-demo/issues/new?template=testing_review.yml)
+- [UI/UX Feedback](https://github.com/kalaba992/Carinski-ekosistem-demo/issues/new?template=ux_feedback.yml)
+- [Customs-Domain Review](https://github.com/kalaba992/Carinski-ekosistem-demo/issues/new?template=customs_domain_review.yml)
+- [Bug Report](https://github.com/kalaba992/Carinski-ekosistem-demo/issues/new?template=bug_report.yml)
+
+Read the [Review Guide](docs/REVIEW_GUIDE.md) before submitting.
 
 ## License
 

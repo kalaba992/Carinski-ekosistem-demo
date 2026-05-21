@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Public demo
+    url: https://carinski-ekosistem-demo.pages.dev
+    about: Try the live sanitized demo before opening feedback.
+  - name: Review guide
+    url: https://github.com/kalaba992/Carinski-ekosistem-demo/blob/main/docs/REVIEW_GUIDE.md
+    about: Read how to provide high-value review feedback.

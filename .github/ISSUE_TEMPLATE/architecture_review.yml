@@ -1,0 +1,50 @@
+name: Architecture Review
+description: Review React/TypeScript structure, component boundaries, data flow, maintainability
+labels: [demo]
+body:
+  - type: textarea
+    id: area
+    attributes:
+      label: Reviewed area
+      placeholder: Which component, file, or pattern did you review?
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk / weak point
+      placeholder: What is fragile, unscalable, or misarchitected?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      placeholder: How would this cause problems as the app grows?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      placeholder: What should be simplified or changed?
+    validations:
+      required: true
+  - type: textarea
+    id: simplify
+    attributes:
+      label: What should be simplified or deleted?
+      placeholder: Any dead code, over-engineered patterns, or unnecessary abstractions?
+    validations:
+      required: false
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - P0 — dangerous
+        - P1 — blocker
+        - P2 — important
+        - P3 — polish
+    validations:
+      required: true

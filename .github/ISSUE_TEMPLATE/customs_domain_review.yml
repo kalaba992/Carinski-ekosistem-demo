@@ -1,0 +1,43 @@
+name: Customs-Domain Review
+description: Review wording, overclaim risk, HS/CN/TARIC/BiH distinction, and professional credibility
+labels: [demo]
+body:
+  - type: textarea
+    id: area
+    attributes:
+      label: Demo wording or classification flow reviewed
+      placeholder: Which part of the demo did you examine?
+    validations:
+      required: true
+  - type: textarea
+    id: overclaim
+    attributes:
+      label: Customs / legal overclaim risk
+      placeholder: Is there wording that implies finality or legal authority?
+    validations:
+      required: true
+  - type: textarea
+    id: distinction
+    attributes:
+      label: HS / CN / TARIC / BiH distinction issue
+      placeholder: Is the demo clear about 6-digit vs 8-digit vs 10-digit levels?
+    validations:
+      required: false
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested safer wording
+      placeholder: How should the demo describe this instead?
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - P0 — dangerous
+        - P1 — blocker
+        - P2 — important
+        - P3 — polish
+    validations:
+      required: true

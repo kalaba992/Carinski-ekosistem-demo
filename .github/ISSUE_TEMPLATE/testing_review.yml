@@ -1,0 +1,47 @@
+name: Testing Review
+description: Identify missing tests, failure modes, and regression risks
+labels: [demo]
+body:
+  - type: textarea
+    id: missing
+    attributes:
+      label: Missing test
+      placeholder: What scenario is not tested?
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: Failure mode
+      placeholder: What could go wrong in this untested scenario?
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Suggested test type
+      options:
+        - Unit
+        - Integration
+        - E2E
+        - Smoke
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      placeholder: What confidence would this test provide?
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - P0 — dangerous
+        - P1 — blocker
+        - P2 — important
+        - P3 — polish
+    validations:
+      required: true

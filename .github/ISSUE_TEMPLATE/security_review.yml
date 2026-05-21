@@ -1,0 +1,53 @@
+name: Security Review
+description: Report accidental data exposure, unsafe assumptions, or production security risks
+labels: [security]
+body:
+  - type: textarea
+    id: concern
+    attributes:
+      label: Security concern
+      placeholder: What is the vulnerability or risk?
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Attack / abuse scenario
+      placeholder: How could this be exploited?
+    validations:
+      required: true
+  - type: textarea
+    id: area
+    attributes:
+      label: Affected area
+      placeholder: Which component, config, or data flow?
+    validations:
+      required: true
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Recommended mitigation
+      placeholder: How should this be addressed?
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - P0 — dangerous
+        - P1 — blocker
+        - P2 — important
+        - P3 — polish
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Risk scope
+      options:
+        - Public demo only
+        - Future production risk
+        - Both
+    validations:
+      required: true
